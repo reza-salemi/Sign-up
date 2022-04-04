@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #1a73e8;
+}
+
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+
+.mb {
+  margin-bottom: 1.3rem;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5rem;
+}
+
+form {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  padding: 2.5rem;
+}
+
+.main {
+  width: 365px;
+}
+.form__heading {
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin-bottom: 2rem;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+}
+
+.form__element {
+  margin-right: 0.5rem;
+  padding: 0.6rem 0.5rem;
+  outline: none;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  flex-grow: 1;
+}
+
+.form__element:focus {
+  border: 2px solid #1a73e8;
+}
+
+.new__gmail {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.paragraph {
+  font-size: 0.7rem;
+  margin-bottom: 1rem;
+  margin-left: 0.6rem;
+  width: 85%;
+  color: #666;
+}
+
+.google__logo {
+  height: 25px;
+  margin-bottom: 0.7rem;
+}
+.checkbox {
+  width: 17px;
+  height: 17px;
+  margin-left: 0.4rem;
+  transition: all 0.5 ease;
+}
+.card {
+  width: 250px;
+  margin-top: 5rem;
+  margin-left: 2.5rem;
+  text-align: center;
+}
+
+.btn {
+  font-weight: bold;
+  padding: 0.8rem 1rem;
+  border: 0;
+  cursor: pointer;
+  background-color: #1a73e8;
+  color: #fff;
+  border-radius: 4px;
+}
+
+.btn:hover {
+  background-color: #0e52aa;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 3.5rem 0;
+}
+
+.pass__label {
+  display: block;
+  margin-left: 1rem;
+}
+
+.card > figcaption {
+  color: #444;
+}
