@@ -31,6 +31,10 @@ a {
   margin-bottom: 1rem;
 }
 
+.gap-10 {
+  gap: 10px;
+}
+
 body {
   font-family: "Noto Sans", sans-serif;
   justify-content: center;
@@ -58,7 +62,6 @@ form {
 .form-group {
   display: flex;
   align-items: center;
-  gap: 10px;
 }
 
 .form__element {
@@ -66,8 +69,8 @@ form {
   outline: none;
   border: 1px solid #e0e0e0;
   border-radius: 4px;
-  width: 100%;
-  /* min-width: 100px; */
+  flex: 1;
+  min-width: 100px;
 }
 
 .form__element:focus {
@@ -79,11 +82,11 @@ form {
 }
 
 .inputs__label {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
   margin-bottom: 1rem;
   margin-left: 0.6rem;
   width: 85%;
-  color: #666;
+  color: #5f6368;
 }
 
 .google__logo {
@@ -133,9 +136,6 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-  .form__image {
-    display: none;
-  }
   body {
     align-items: baseline;
     justify-content: flex-start;
@@ -151,6 +151,10 @@ footer {
   }
   .form-group {
     flex-wrap: wrap;
+  }
+  .form__element {
+    width: 100%;
+    flex: 0 1 auto;
   }
 }
 
