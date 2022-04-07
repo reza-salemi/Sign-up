@@ -9,35 +9,46 @@
 }
 
 a {
+  display: block;
+  font-size: 0.9rem;
   text-decoration: none;
   color: #1a73e8;
 }
 
-body {
-  font-family: "Noto Sans", sans-serif;
+.flex {
+  display: flex;
+}
+
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-items {
+  align-items: center;
 }
 
 .mb {
-  margin-bottom: 1.3rem;
+  margin-bottom: 1rem;
 }
 
-.container {
-  display: flex;
+body {
+  font-family: "Noto Sans", sans-serif;
   justify-content: center;
-  margin-top: 5rem;
+  align-items: center;
+  height: 100vh;
 }
 
 form {
   border: 1px solid #e0e0e0;
   border-radius: 8px;
-  display: flex;
   justify-content: space-between;
-  padding: 2.5rem;
+  padding: 2.5rem 2.5rem 2rem;
 }
 
-.main {
+.form__data {
   width: 365px;
 }
+
 .form__heading {
   font-size: 1.5rem;
   font-weight: 400;
@@ -47,15 +58,16 @@ form {
 .form-group {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 
 .form__element {
-  margin-right: 0.5rem;
   padding: 0.6rem 0.5rem;
   outline: none;
   border: 1px solid #e0e0e0;
   border-radius: 4px;
-  flex-grow: 1;
+  width: 100%;
+  /* min-width: 100px; */
 }
 
 .form__element:focus {
@@ -63,11 +75,10 @@ form {
 }
 
 .new__gmail {
-  display: block;
   margin-bottom: 2rem;
 }
 
-.paragraph {
+.inputs__label {
   font-size: 0.7rem;
   margin-bottom: 1rem;
   margin-left: 0.6rem;
@@ -82,10 +93,10 @@ form {
 .checkbox {
   width: 17px;
   height: 17px;
+  cursor: pointer;
   margin-left: 0.4rem;
-  transition: all 0.5 ease;
 }
-.card {
+.form__image {
   width: 250px;
   margin-top: 5rem;
   margin-left: 2.5rem;
@@ -107,10 +118,9 @@ form {
 }
 
 footer {
-  display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 3.5rem 0;
+  margin: 2.8rem 0;
 }
 
 .pass__label {
@@ -118,6 +128,34 @@ footer {
   margin-left: 1rem;
 }
 
-.card > figcaption {
+.form__image > figcaption {
   color: #444;
+}
+
+@media screen and (max-width: 600px) {
+  .form__image {
+    display: none;
+  }
+  body {
+    align-items: baseline;
+    justify-content: flex-start;
+  }
+  form {
+    border: 0;
+    padding: 0;
+    margin-top: 2.3rem;
+  }
+  .form__data {
+    width: 100%;
+    padding: 0 2rem;
+  }
+  .form-group {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .form__image {
+    display: none;
+  }
 }

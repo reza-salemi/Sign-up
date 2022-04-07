@@ -7,79 +7,67 @@
     <link rel="stylesheet" href="css/style.css" />
     <title>Create your Google Account</title>
   </head>
-  <body>
-    <main class="container">
-      <form action="">
-        <section class="main">
-          <header>
-            <img
-              class="google__logo"
-              src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
-              alt="Google Logo"
-            />
-            <h2 class="form__heading">Create your Google Accouht</h2>
-          </header>
-
-          <div class="form-group mb">
-            <input type="text" placeholder="First name" class="form__element" />
-            <input type="text" placeholder="Last name" class="form__element" />
-          </div>
-
-          <div class="form-group">
-            <input
-              type="email"
-              placeholder="Username"
-              class="form__element email"
-            />
-          </div>
-
-          <p class="paragraph">You can use letters,numbers & periods</p>
-
-          <a href="#" class="new__gmail"
-            >Use my current email address instead</a
-          >
-
-          <div class="form-group">
-            <input
-              type="password"
-              placeholder="Password"
-              class="form__element"
-            />
-            <input
-              type="password"
-              placeholder="Confirm"
-              class="form__element"
-            />
-          </div>
-
-          <p class="paragraph">
-            Use 8 or more characters with a mix of letters, numbers & symbols
-          </p>
-
-          <div class="form-group">
-            <input
-              type="checkbox"
-              class="checkbox"
-              name="show-pass"
-              id="show-pass"
-            />
-            <label class="pass__label" for="show-pass">Show password</label>
-          </div>
-
-          <footer>
-            <a href="#">Sign in instead</a>
-            <input type="submit" value="Register" class="btn" />
-          </footer>
-        </section>
-
-        <figure class="card">
+  <body class="flex">
+    <form class="flex">
+      <section class="form__data">
+        <header>
           <img
-            src="https://ssl.gstatic.com/accounts/signup/glif/account.svg"
-            alt=""
+            class="google__logo"
+            src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png"
+            alt="Google Logo"
           />
-          <figcaption>One account. All of Google working for you.</figcaption>
-        </figure>
-      </form>
-    </main>
+          <h2 class="form__heading">Create your Google Account</h2>
+        </header>
+
+        <div class="form-group mb">
+          <input type="text" placeholder="First name" class="form__element" />
+          <input type="text" placeholder="Last name" class="form__element" />
+        </div>
+
+        <div class="form-group flex-wrap">
+          <input
+            type="email"
+            placeholder="Your email address"
+            class="form__element"
+          />
+          <label class="inputs__label"
+            >You can use letters,numbers & periods</label
+          >
+        </div>
+
+        <a href="#" class="new__gmail">Use my current email address instead</a>
+
+        <div class="form-group flex-wrap">
+          <input type="password" placeholder="Password" class="form__element" />
+          <input type="password" placeholder="Confirm" class="form__element" />
+          <label class="inputs__label">
+            Use 8 or more characters with a mix of letters, numbers & symbols
+          </label>
+        </div>
+
+        <div class="form-group">
+          <input
+            type="checkbox"
+            class="checkbox"
+            name="show-pass"
+            id="show-pass"
+          />
+          <label class="pass__label" for="show-pass">Show password</label>
+        </div>
+
+        <footer class="flex">
+          <a href="#">Sign in instead</a>
+          <input type="submit" value="Register" class="btn" />
+        </footer>
+      </section>
+
+      <figure class="form__image">
+        <img
+          src="https://ssl.gstatic.com/accounts/signup/glif/account.svg"
+          alt=""
+        />
+        <figcaption>One account. All of Google working for you.</figcaption>
+      </figure>
+    </form>
   </body>
 </html>
