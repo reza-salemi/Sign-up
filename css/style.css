@@ -15,7 +15,7 @@ a {
   color: #1a73e8;
 }
 
-.flex {
+.d-flex {
   display: flex;
 }
 
@@ -27,12 +27,12 @@ a {
   align-items: center;
 }
 
-.mb {
-  margin-bottom: 1rem;
+.mt {
+  margin-top: 1rem;
 }
 
-.gap-10 {
-  gap: 10px;
+.mt-2 {
+  margin-top: 2rem;
 }
 
 body {
@@ -69,16 +69,13 @@ form {
   outline: none;
   border: 1px solid #e0e0e0;
   border-radius: 4px;
+  margin-right: 0.7rem;
   flex: 1;
   min-width: 100px;
 }
 
 .form__element:focus {
   border: 2px solid #1a73e8;
-}
-
-.new__gmail {
-  margin-bottom: 2rem;
 }
 
 .inputs__label {
@@ -155,6 +152,11 @@ footer {
   .form__element {
     width: 100%;
     flex: 0 1 auto;
+    margin-right: 0;
+    margin-top: 0.7rem;
+  }
+  .form__element:first-child {
+    margin-top: 0;
   }
 }
 
